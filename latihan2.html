@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <title>Latihan 2 Kalkulator sederhana</title>
+    <script lang="JavaScript">document.write("Dimodifikasi terakhir pada : "+document.lastModified);</script>
+</head>
+<body>
+    <h1 style="text-align: center;">Kalkulator Sederhana</h1>
+        <form method="POST" name="hitung" style="text-align: center;">
+            <p>Silakan isikan pada kolom 1 untuk input bilangan pertama, kolom
+                2 untuk input bilangan kedua!
+            </p><br>
+            <!--Kolom Input BILANGAN -->
+            <p>Masukkan Bilangan 1 :</p>
+            <input type="text" name="bil1" style="width: 4%;">
+            <p>Masukkan Bilangan 2 :</p>
+            <input type="text" name="bil2" style="width: 4%;"><br><br>
+            Pilih operasi hitung :
+            <!--Tombol Jumlah-->
+            <input type="button" value="+" name="jmlh" onclick=jumlah()>
+            <!--Tombol Kurang-->
+            <input type="button" value="-" name="krng" onclick=kurang()>
+            <!--Tombol Kali-->
+            <input type="button" value="x" name="kli" onclick=kali()>
+            <!--Tombol BagI-->
+            <input type="button" value=":" name="bgi" onclick=bagi()><br>        
+            <!--Kolom Hasil Hitung Ditampung disini--> <br>
+            Hasil : 
+            <input type="text" name="hasil" style="width: 4%;">  
+        </form>
+</body>
+<script lang="JavaScript">
+    //FUNGSI PENJUMLAHAN
+    function jumlah (){
+            var angka1=parseInt(document.hitung.bil1.value);//CONVERT STRING MENJADI INTEGER
+            var angka2=parseInt(document.hitung.bil2.value);
+            var hasilhitung=angka1+angka2;
+            document.hitung.hasil.value=hasilhitung; //mengubah value hasil pada form hitung
+        }
+        //FUNGSI PENGURANGAN
+        function kurang (){
+            var angka1=parseInt(document.hitung.bil1.value);
+            var angka2=parseInt(document.hitung.bil2.value);
+            var hasilhitung=angka1-angka2;
+            document.hitung.hasil.value=hasilhitung;
+        }
+        //FUNGSI PERKALIAN
+        function kali (){
+            var angka1=parseInt(document.hitung.bil1.value);
+            var angka2=parseInt(document.hitung.bil2.value);
+            var hasilhitung=angka1*angka2;
+            document.hitung.hasil.value=hasilhitung;
+        }
+        //FUNGSI PEMBAGIAN
+        function bagi (){
+            var angka1=parseInt(document.hitung.bil1.value);
+            var angka2=parseInt(document.hitung.bil2.value);
+            var hasilhitung=angka1/angka2;
+            document.hitung.hasil.value=hasilhitung;
+        }
+</script>
+</html>

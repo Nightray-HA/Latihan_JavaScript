@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <title>Memasukkan output di dalam elemen HTML</title>
+</head>
+<body>
+    <!--membuat tag p-->
+    <p id="greet"></p>
+    <p id="sum"></p>
+    <script>
+        //memasukkan string ke dalam elemen
+        document.getElementById("greet").innerHTML = 'Selamat Pagi, Hari yang cerah';
+        //memasukkan variabel ke dalam elemen
+        var x = 9;  // deklarasi variabel
+        var y = 1;
+        var sum = x + y;
+        document.getElementById("sum").innerHTML = sum; //cetak 10 
+    </script>
+</body>
+</html>

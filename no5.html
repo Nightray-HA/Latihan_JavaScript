@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <title>SWITCH</title>
+</head>
+<body>
+    <input type="button" name="tombol" value="switch" onclick=tes() ><!--Membuat tombol-->
+</body>
+<script lang="JavaScript">
+    //Membuat function
+    function tes(){
+        val1 = window.prompt("Input Angka (1 - 5) = ")//input angka antara 1 - 5
+        switch (val1){ //deklarasi variabel yang akan diambil nilainya
+            //perintah yang akan terjadi sesuai nilai variabel
+            case "1":   
+                document.write("SATU")
+            break
+            case "2":
+                document.write("DUA")
+            break
+            case "3":
+                document.write("TIGA")
+            break
+            case "4":
+                document.write("EMPAT")
+            break
+            case "5":
+                document.write("LIMA")
+            break
+            default : //nilai default jika nilai tidak sesuai dengan salah satu case
+            document.write("Bukan 1-5")
+        }
+    } 
+</script>
+</html>

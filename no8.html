@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <title>membuat input</title>
+</head>
+<body>
+    <form method="POST" name="kirim">       
+        <p>
+            BIL 
+            <!--Input Nilai val1 berupa T1-->
+            <input type="text" name="T1" size="20"> MERUPAKAN BIL 
+            <input type="text" name="T2" size="20">
+        </p>
+        <!--Tombol untuk menebak (menjalankan fungsi test)-->
+        <p><input type="button" value="TEBAK" name="B1" onclick=tebak()></p>
+    </form>
+</body>
+<script>
+    function tebak(){
+            //menampung nilaike val 1 dari t1
+            var val1=document.kirim. T1.value
+            //jika hasil val1%2 hasilnya 0 maka genap
+            if(val1%2==0)
+            document.kirim.T2.value="bilangan genap"
+            //jika tidak maka ganjil
+            else
+            document.kirim.T2.value="bilangan ganjil"
+        } 
+</script>
+</html>

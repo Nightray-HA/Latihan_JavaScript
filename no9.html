@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <title>Membuat button</title>
+</head>
+<body>  
+    <h1>TEST</h1>
+        <form>
+            <!--Ubah warna bg-->
+            <input type="button" value="Latar Belakang Hijau" onclick="ubahWarnaLB('GREEN')">
+            <input type="button" value="Latar Belakang Putih" onclick="ubahWarnaLB('WHITE')">
+
+            <!--Ubah warna teks-->
+            <input type="button" value="Teks Kuning" onclick="ubahWarnaLD('YELLOW')">
+            <input type="button" value="Teks Biru" onclick="ubahWarnaLD('BLUE')">
+        </form>
+        <script language="Javascript">
+            function ubahWarnaLB(warna){
+                document.bgColor = warna;
+            }
+            function ubahWarnaLD(warna){
+                document.fgColor = warna;
+            }
+        </script>
+</body>
+</html>
